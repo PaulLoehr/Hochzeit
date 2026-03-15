@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Shirt } from 'lucide-react';
 import { weddingData } from '../data';
+import withBase from '../utils/asset';
 
 export default function DresscodeSection() {
   return (
@@ -41,7 +42,7 @@ export default function DresscodeSection() {
         >
           <figure className="bg-white rounded-2xl overflow-hidden border border-sage/20">
             <img
-              src={weddingData.dresscode.paletteImage}
+              src={withBase(weddingData.dresscode.paletteImage)}
               alt="Dresscode Farbpalette in Pastelltönen mit Navi-Blau"
               className="w-full h-72 md:h-80 object-cover"
               loading="lazy"
@@ -53,7 +54,7 @@ export default function DresscodeSection() {
 
           <figure className="bg-white rounded-2xl overflow-hidden border border-sage/20">
             <img
-              src={weddingData.dresscode.moodboardImage}
+              src={withBase(weddingData.dresscode.moodboardImage)}
               alt="Dresscode Moodboard mit schickem, elegantem Stil"
               className="w-full h-72 md:h-80 object-cover"
               loading="lazy"

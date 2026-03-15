@@ -65,19 +65,7 @@ export default function RSVPSection() {
           </div>
         </motion.div>
 
-        {/* Note about Google Form */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.6 }}
-          className="mt-8 text-center"
-        >
-          <p className="text-xs text-charcoal-light bg-white/80 backdrop-blur-sm rounded-lg px-6 py-3 inline-block">
-            📝 <strong>Hinweis für den Entwickler:</strong> Bitte erstelle ein Google Form und ersetze die URL in der{' '}
-            <code className="bg-sage/10 px-2 py-1 rounded text-sage-dark">data.js</code> Datei
-          </p>
-        </motion.div>
+        {/* end RSVP content */}
       </div>
     </section>
   );

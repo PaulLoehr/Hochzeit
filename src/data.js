@@ -22,10 +22,13 @@ export const weddingData = {
     title: "Dresscode",
     description:
       "Bitte kommt schick und elegant. Wir wünschen uns eine pastellige Farbpalette mit soften Tönen; als klassischer Akzent ist Navi-Blau ausdrücklich willkommen.",
-    paletteImage: "/dresscode-palette.svg",
-    moodboardImage:
-      "/moodboard-outfits.png",
+    // local public/ assets (filenames only) — components will prefix with BASE_URL
+    paletteImage: "dresscode-palette.svg",
+    moodboardImage: "moodboard-outfits.png",
   },
+
+  // Local public images used by components
+  heroImage: "Hero_Bild.jpg",
   
   // Location Details
   location: {

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
 import { weddingData } from '../data';
+import withBase from '../utils/asset';
 
 export default function HeroSection() {
   return (
@@ -8,7 +9,7 @@ export default function HeroSection() {
       {/* Background image (from public/) */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/Hero_Bild.jpg)' }}
+        style={{ backgroundImage: `url(${withBase(weddingData.heroImage)})` }}
       />
 
       {/* Gradient overlay for better contrast */}
