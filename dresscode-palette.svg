@@ -1,0 +1,11 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#FAF9F6"/>
+  <rect x="180" y="200" width="280" height="600" rx="32" fill="#EFD7D7"/>
+  <rect x="500" y="200" width="280" height="600" rx="32" fill="#F2E7D5"/>
+  <rect x="820" y="200" width="280" height="600" rx="32" fill="#C4D6B0"/>
+  <rect x="1140" y="200" width="280" height="600" rx="32" fill="#D8CFE4"/>
+  <text x="320" y="860" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#2C2C2C">Rosé</text>
+  <text x="640" y="860" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#2C2C2C">Champagner</text>
+  <text x="960" y="860" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#2C2C2C">Salbei</text>
+  <text x="1280" y="860" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#2C2C2C">Lavendel</text>
+</svg>
