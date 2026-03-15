@@ -1,7 +1,75 @@
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { weddingData } from '../data';
 import withBase from '../utils/asset';
+
+// CountdownArea: zeigt verbleibende Tage und Minuten bis zum Hochzeitsdatum an.
+// Annahme: Zieldatum ist 3. September 2026 (lokale Zeit, 14:00).
+function CountdownArea() {
+  const target = new Date(2026, 8, 3, 14, 0, 0); // Monat ist 0-basiert: 8 = September, Zeit: 14:00
+
+  const compute = () => {
+    const now = new Date();
+    const raw = Math.max(0, target.getTime() - now.getTime());
+    const dayMs = 1000 * 60 * 60 * 24;
+    const hourMs = 1000 * 60 * 60;
+    const minuteMs = 1000 * 60;
+
+    const days = Math.floor(raw / dayMs);
+    const hours = Math.floor((raw % dayMs) / hourMs);
+    const minutes = Math.floor((raw % hourMs) / minuteMs);
+    const isPast = raw === 0;
+    return { days, hours, minutes, isPast };
+  };
+
+  const [timeLeft, setTimeLeft] = useState(compute());
+
+  useEffect(() => {
+    // Update jede Sekunde, damit Stunden/Minuten sauber wechseln.
+    const id = setInterval(() => setTimeLeft(compute()), 1000);
+    // sofortiges Update beim Mount
+    setTimeLeft(compute());
+    return () => clearInterval(id);
+  }, []);
+
+  if (timeLeft.isPast) {
+    return (
+      <div className="mt-4">
+        <p className="text-xl md:text-2xl text-charcoal-light font-light">Heute ist unser großer Tag 🎉</p>
+      </div>
+    );
+  }
+
+  const pad = (n) => String(n).padStart(2, '0');
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.5, duration: 0.8 }}
+      className="space-y-2"
+      aria-live="polite"
+    >
+      <div className="flex items-center justify-center gap-6 mt-2">
+        <div className="text-center">
+          <div className="text-4xl md:text-5xl font-semibold text-charcoal">{timeLeft.days}</div>
+          <div className="text-sm text-charcoal-light">Tage</div>
+        </div>
+
+        <div className="text-center">
+          <div className="text-4xl md:text-5xl font-semibold text-charcoal">{pad(timeLeft.hours)}</div>
+          <div className="text-sm text-charcoal-light">Stunden</div>
+        </div>
+
+        <div className="text-center">
+          <div className="text-4xl md:text-5xl font-semibold text-charcoal">{pad(timeLeft.minutes)}</div>
+          <div className="text-sm text-charcoal-light">Minuten</div>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function HeroSection() {
   return (
@@ -39,19 +107,7 @@ export default function HeroSection() {
             {weddingData.couple.secondName}
           </h1>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="space-y-2"
-          >
-            <p className="text-xl md:text-2xl text-charcoal-light font-light">
-              {weddingData.date.full}
-            </p>
-            <p className="text-lg md:text-xl text-sage-dark">
-              {weddingData.location.name}
-            </p>
-          </motion.div>
+          <CountdownArea />
         </motion.div>
 
       </div>

@@ -8,6 +8,7 @@ import TimelineSection from './components/TimelineSection';
 import RSVPSection from './components/RSVPSection';
 import LocationSection from './components/LocationSection';
 import FAQSection from './components/FAQSection';
+import TrauzeugenSection from './components/TrauzeugenSection';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -45,6 +46,7 @@ function App() {
           >
             <HeroSection />
             <DetailsSection />
+            <TrauzeugenSection />
             <DresscodeSection />
             <TimelineSection />
             <RSVPSection />
