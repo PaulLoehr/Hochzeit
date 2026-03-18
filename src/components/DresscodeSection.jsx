@@ -5,7 +5,7 @@ import withBase from '../utils/asset';
 
 export default function DresscodeSection() {
   return (
-    <section className="py-20 md:py-32 px-4 bg-gradient-to-b from-cream/40 to-white">
+    <section className="py-20 md:py-32 px-4 bg-cream">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

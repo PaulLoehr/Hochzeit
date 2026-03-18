@@ -106,4 +106,26 @@ export const weddingData = {
       "https://docs.google.com/forms/d/e/1FAIpQLSfjXoJtU8_Zp8OfwKMUR2oQj6bnpZnE6QjiqW7Px8Qlr1vhEg/viewform?embedded=true",
     fallbackEmail: "kira.paul.wedding@example.com",
   },
+
+  // Trauzeugen
+  trauzeugen: {
+    intro:
+      "Nele und Fabian sind unsere Trauzeugen. Sie kümmern sich um den Ablauf und die Planung des Programms. Wenn ihr Ideen oder Vorschläge für Programmpunkte habt, sprecht euch bitte mit ihnen ab.",
+    people: [
+      {
+        name: "Nele",
+        image: "Nele.png",
+        alt: "Nele",
+        description:
+          "Unsere herzliche Organisatorin. Nele unterstützt bei Ablaufplanung und Koordination am Tag selbst.",
+      },
+      {
+        name: "Fabian",
+        image: "Fabi.jpg",
+        alt: "Fabian",
+        description:
+          "Unser Ruhepol und Ansprechpartner für technische/organisatorische Fragen während des Events.",
+      },
+    ],
+  },
 };

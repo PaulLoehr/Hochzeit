@@ -23,7 +23,7 @@ const itemVariants = {
 
 export default function DetailsSection() {
   return (
-    <section className="py-20 md:py-32 px-4 bg-white">
+    <section className="py-20 md:py-32 px-4 bg-cream">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

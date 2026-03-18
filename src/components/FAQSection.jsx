@@ -50,7 +50,7 @@ function FAQItem({ question, answer, index }) {
 
 export default function FAQSection() {
   return (
-    <section className="py-20 md:py-32 px-4 bg-white">
+    <section className="py-20 md:py-32 px-4 bg-cream">
       <div className="max-w-3xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ export default function FAQSection() {
           Hier findet ihr Antworten auf die wichtigsten Fragen
         </motion.p>
 
-        <div className="bg-cream/50 rounded-2xl p-6 md:p-8">
+        <div className="bg-white rounded-2xl p-6 md:p-8">
           {weddingData.faq.map((item, index) => (
             <FAQItem
               key={index}

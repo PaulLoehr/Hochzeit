@@ -30,7 +30,7 @@ const itemVariants = {
 
 export default function TimelineSection() {
   return (
-    <section className="py-20 md:py-32 px-4 bg-gradient-to-b from-white via-cream/30 to-white">
+    <section className="py-20 md:py-32 px-4 bg-sage-light/20">
       <div className="max-w-4xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
