@@ -23,8 +23,7 @@ export const weddingData = {
     description:
       "Bitte kommt schick und elegant. Wir wünschen uns eine pastellige Farbpalette mit soften Tönen; als klassischer Akzent ist Navi-Blau ausdrücklich willkommen.",
     // local public/ assets (filenames only) — components will prefix with BASE_URL
-    paletteImage: "dresscode-palette.svg",
-    moodboardImage: "moodboard-outfits.png",
+    paletteImage: "farbpalette.jpg"
   },
 
   // Photos
@@ -123,7 +122,7 @@ export const weddingData = {
   rsvp: {
     googleFormUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSfjXoJtU8_Zp8OfwKMUR2oQj6bnpZnE6QjiqW7Px8Qlr1vhEg/viewform?embedded=true",
-    fallbackEmail: "kira.paul.wedding@example.com",
+    fallbackEmail: "leitstellesimon@outlook.de",
   },
 
   // Trauzeugen

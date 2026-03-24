@@ -37,10 +37,20 @@ export default function TimelineSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-serif text-center text-charcoal mb-16"
+          className="text-4xl md:text-5xl font-serif text-center text-charcoal mb-6"
         >
           Der Ablauf
         </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1, duration: 0.6 }}
+          className="text-lg text-center text-charcoal-light max-w-2xl mx-auto mb-16 leading-relaxed"
+        >
+          Wir können es kaum erwarten, diesen besonderen Tag mit euch zu verbringen!
+        </motion.p>
 
         <motion.div
           variants={containerVariants}

@@ -10,6 +10,7 @@ import LocationSection from './components/LocationSection';
 import PhotosSection from './components/PhotosSection';
 import FAQSection from './components/FAQSection';
 import TrauzeugenSection from './components/TrauzeugenSection';
+import PartyMode from './components/PartyMode';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -64,6 +65,7 @@ function App() {
                 © 2026 - Alle Rechte vorbehalten
               </p>
             </footer>
+            <PartyMode />
           </motion.main>
         )}
       </AnimatePresence>

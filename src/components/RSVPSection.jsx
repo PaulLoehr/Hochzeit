@@ -26,7 +26,7 @@ export default function RSVPSection() {
           Bitte teilt uns mit, ob Ihr an unserer Hochzeit teilnehmen könnt.
           Füllt das Formular jeweils einzeln für jede Person aus, damit wir die Gästeliste korrekt führen können.
           <br /><br />
-          Wir freuen uns auf Eure Rückmeldung bis zum <span className="font-bold">15. August 2026</span>!
+          Wir freuen uns auf Eure Rückmeldung bis zum <span className="font-bold">31. Juli 2026</span>!
         </motion.p>
 
         <motion.div

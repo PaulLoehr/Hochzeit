@@ -1,7 +1,20 @@
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { weddingData } from '../data';
+import withBase from '../utils/asset';
 
 export default function LocationSection() {
+  const { location } = weddingData;
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (!location?.images?.length) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % location.images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [location]);
+
   return (
     <section className="py-20 md:py-32 px-4 bg-sage-light/20">
       <div className="max-w-6xl mx-auto">
@@ -20,35 +33,49 @@ export default function LocationSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="rounded-2xl overflow-hidden border border-sage/20"
+          className="relative w-full max-w-2xl mx-auto aspect-[3/2] md:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl bg-gray-100 ring-8 ring-white mb-12"
         >
           <iframe
             src={weddingData.location.googleMapsEmbedUrl}
             title="Google Maps - Castillo del Mar"
-            className="w-full h-[320px] md:h-[420px]"
+            className="absolute inset-0 w-full h-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          className="grid sm:grid-cols-2 gap-4 md:gap-6 mt-6"
-        >
-          {weddingData.location.images.map((image) => (
-            <div key={image.src} className="rounded-2xl overflow-hidden">
-              <img
-                src={image.src}
-                alt={image.alt}
-                loading="lazy"
-                className="w-full h-64 md:h-72 object-cover"
-              />
+        {location.images?.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="relative w-full max-w-2xl mx-auto aspect-[3/2] md:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl bg-gray-100 ring-8 ring-white">
+              <AnimatePresence mode="popLayout" initial={false}>
+                <motion.img
+                  key={currentIndex}
+                  src={withBase(location.images[currentIndex].src)}
+                  alt={location.images[currentIndex].alt}
+                  initial={{ opacity: 0, scale: 1.1 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1.2 }}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </AnimatePresence>
+              
+               <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+                {location.images.map((_, idx) => (
+                  <div 
+                    key={idx}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === currentIndex ? 'bg-white w-4' : 'bg-white/50'}`}
+                  />
+                ))}
+              </div>
             </div>
-          ))}
-        </motion.div>
+          </motion.div>
+        )}
       </div>
     </section>
   );
