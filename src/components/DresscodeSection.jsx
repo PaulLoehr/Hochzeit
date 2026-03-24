@@ -44,7 +44,7 @@ export default function DresscodeSection() {
             <img
               src={withBase(weddingData.dresscode.paletteImage)}
               alt="Dresscode Farbpalette in Pastelltönen mit Navi-Blau"
-              className="w-full h-72 md:h-80 object-cover"
+              className="w-full h-auto object-contain"
               loading="lazy"
             />
             <figcaption className="px-5 py-4 text-sm text-charcoal-light">
@@ -56,7 +56,7 @@ export default function DresscodeSection() {
             <img
               src={withBase(weddingData.dresscode.moodboardImage)}
               alt="Dresscode Moodboard mit schickem, elegantem Stil"
-              className="w-full h-72 md:h-80 object-cover"
+              className="w-full h-auto object-contain"
               loading="lazy"
             />
             <figcaption className="px-5 py-4 text-sm text-charcoal-light">

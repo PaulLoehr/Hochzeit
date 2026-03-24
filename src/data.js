@@ -43,11 +43,11 @@ export const weddingData = {
   },
 
   // Local public images used by components
-  heroImage: "Hero_2.PNG",
+  heroImage: "Hero_Bild.jpg", // Hero section background image (place in public/)
   
   // Location Details
   location: {
-    name: "Castillo del Mar, 76698 Zeutern",
+    name: "Castillo del Mar",
     address: "Industriestraße 70-72, 76698 Zeutern",
     googleMapsUrl: "https://maps.google.com/?q=Castillo+del+Mar+Industriestra%C3%9Fe+70-72+76698+Zeutern",
     googleMapsEmbedUrl: "https://www.google.com/maps?q=Castillo+del+Mar+Industriestra%C3%9Fe+70-72+76698+Zeutern&output=embed",
@@ -99,20 +99,24 @@ export const weddingData = {
   faq: [
     {
       question: "Gibt es einen Dresscode?",
-      answer: "Wir freuen uns über festliche Garderobe. Damen in Cocktailkleidern oder eleganten Abendkleidern, Herren in Anzug oder Smoking.",
+      answer: "Wir freuen uns über festliche Garderobe. Damen in Cocktailkleidern oder eleganten Abendkleidern, Herren in Anzug.",
     },
     {
       question: "Wo kann ich parken?",
-      answer: "Es gibt ausreichend Parkplätze direkt am Schloss. Folgt einfach der Beschilderung 'Hochzeit Kira & Paul'.",
+      answer: "Es gibt ausreichend Parkplätze direkt an der Location.",
     },
     {
       question: "Was wünscht ihr euch zur Hochzeit?",
       answer: "Das Schönste Geschenk ist eure Anwesenheit! Wer uns dennoch etwas schenken möchte: Wir freuen uns über einen Beitrag zu unserer Hochzeitsreise.",
     },
     {
-      question: "Gibt es Hotelempfehlungen?",
-      answer: "Wir haben Zimmerkontingente im Hotel Rosengarten (5 Min entfernt) und im Landhaus Seeblick (10 Min entfernt) reserviert. Bitte gebt bei der Buchung 'Hochzeit Kira & Paul' an.",
+      question: "Was passiert bei schlechtem Wetter?",
+      answer: "Die Location bietet sowohl wunderschöne Außenbereiche als auch einen eleganten Innenbereich, sodass die Feier bei jedem Wetter unvergesslich wird.",
     },
+    {
+      question: "Was können Kinder auf der Hochzeit machen?",
+      answer: "Kinder sind herzlich willkommen! Es gibt spezielle Aktivitäten für junge Gäste, darunter eine kleine Spielecke und kreative Bastelprojekte. Zudem gibt es einen Schlafbereich für die Kleinen, damit auch die Eltern entspannt feiern können. Bitte bringt bei Bedarf eine Schlafmöglichkeit für euer Kind mit (z.B. Reisebett).",
+    }
   ],
   
   // RSVP Google Form URL

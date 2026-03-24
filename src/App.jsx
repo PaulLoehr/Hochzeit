@@ -58,7 +58,7 @@ function App() {
             {/* Footer */}
             <footer className="bg-charcoal text-white py-8 text-center">
               <p className="text-sm">
-                Mit Liebe gemacht von Kira & Paul ❤️
+                Kira & Paul
               </p>
               <p className="text-xs text-white/60 mt-2">
                 © 2026 - Alle Rechte vorbehalten

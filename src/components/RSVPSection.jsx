@@ -23,7 +23,10 @@ export default function RSVPSection() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-center text-charcoal-light mb-12"
         >
-          Wir freuen uns auf eure Rückmeldung
+          Bitte teilt uns mit, ob Ihr an unserer Hochzeit teilnehmen könnt.
+          Füllt das Formular jeweils einzeln für jede Person aus, damit wir die Gästeliste korrekt führen können.
+          <br /><br />
+          Wir freuen uns auf Eure Rückmeldung bis zum <span className="font-bold">15. August 2026</span>!
         </motion.p>
 
         <motion.div
@@ -48,21 +51,7 @@ export default function RSVPSection() {
             </iframe>
           </div>
 
-          {/* Fallback Contact */}
-          <div className="p-6 bg-cream/50 border-t border-sage/20">
-            <div className="flex items-center justify-center text-charcoal-light text-sm">
-              <Mail className="w-4 h-4 mr-2 text-sage" />
-              <span>
-                Probleme mit dem Formular?{' '}
-                <a
-                  href={`mailto:${weddingData.rsvp.fallbackEmail}`}
-                  className="text-sage hover:text-sage-dark font-medium transition-colors"
-                >
-                  Schreibt uns direkt
-                </a>
-              </span>
-            </div>
-          </div>
+          
         </motion.div>
 
         {/* end RSVP content */}
