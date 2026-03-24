@@ -27,8 +27,23 @@ export const weddingData = {
     moodboardImage: "moodboard-outfits.png",
   },
 
+  // Photos
+  photos: {
+    albumUrl: "https://photos.app.goo.gl/WpzDgEN21bDNZHsy5",
+    title: "Bilder & Momente",
+    description: "Teilt eure schönsten Schnappschüsse mit uns! Hier könnt ihr alle Bilder der Hochzeit hochladen und die Fotos der anderen Gäste anschauen.",
+    // Placeholder photos for the slideshow/collage - replace with your own images (e.g. from the civil wedding)
+    previewPhotos: [
+      "Slideshow03.JPG",
+      "Slideshow04.JPG",
+      "Slideshow05.JPG",
+      "Slideshow06.JPG",
+      "Slideshow07.JPG"
+    ],
+  },
+
   // Local public images used by components
-  heroImage: "Hero_Bild.jpg",
+  heroImage: "Hero_2.PNG",
   
   // Location Details
   location: {
@@ -124,7 +139,7 @@ export const weddingData = {
         image: "Fabi.jpg",
         alt: "Fabian",
         description:
-          "Unser Ruhepol und Ansprechpartner für technische/organisatorische Fragen während des Events.",
+          "Unser Ruhepol und Ansprechpartner für technische und organisatorische Fragen während des Events.",
       },
     ],
   },

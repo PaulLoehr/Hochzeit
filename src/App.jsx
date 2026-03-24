@@ -7,6 +7,7 @@ import DresscodeSection from './components/DresscodeSection';
 import TimelineSection from './components/TimelineSection';
 import RSVPSection from './components/RSVPSection';
 import LocationSection from './components/LocationSection';
+import PhotosSection from './components/PhotosSection';
 import FAQSection from './components/FAQSection';
 import TrauzeugenSection from './components/TrauzeugenSection';
 
@@ -51,6 +52,7 @@ function App() {
             <TimelineSection />
             <RSVPSection />
             <LocationSection />
+            <PhotosSection />
             <FAQSection />
 
             {/* Footer */}
