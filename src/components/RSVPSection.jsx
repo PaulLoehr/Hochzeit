@@ -23,8 +23,8 @@ export default function RSVPSection() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-center text-charcoal-light mb-12"
         >
-          Bitte teilt uns mit, ob Ihr an unserer Hochzeit teilnehmen könnt.
-          Füllt das Formular jeweils einzeln für jede Person aus, damit wir die Gästeliste korrekt führen können.
+          Bitte teilt uns mit, ob Ihr an unserer Hochzeit teilnehmen könnt.<br /><br />
+          Füllt das Formular jeweils <span className="font-bold">einzeln für jede Person</span> aus, damit wir die Gästeliste korrekt führen können.
           <br /><br />
           Wir freuen uns auf Eure Rückmeldung bis zum <span className="font-bold">31. Juli 2026</span>!
         </motion.p>

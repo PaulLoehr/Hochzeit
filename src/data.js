@@ -96,27 +96,43 @@ export const weddingData = {
   
   // FAQ Items
   faq: [
-    {
-      question: "Gibt es einen Dresscode?",
-      answer: "Wir freuen uns über festliche Garderobe. Damen in Cocktailkleidern oder eleganten Abendkleidern, Herren in Anzug.",
-    },
-    {
-      question: "Wo kann ich parken?",
-      answer: "Es gibt ausreichend Parkplätze direkt an der Location.",
-    },
-    {
-      question: "Was wünscht ihr euch zur Hochzeit?",
-      answer: "Das Schönste Geschenk ist eure Anwesenheit! Wer uns dennoch etwas schenken möchte: Wir freuen uns über einen Beitrag zu unserer Hochzeitsreise.",
-    },
-    {
-      question: "Was passiert bei schlechtem Wetter?",
-      answer: "Die Location bietet sowohl wunderschöne Außenbereiche als auch einen eleganten Innenbereich, sodass die Feier bei jedem Wetter unvergesslich wird.",
-    },
-    {
-      question: "Was können Kinder auf der Hochzeit machen?",
-      answer: "Kinder sind herzlich willkommen! Es gibt spezielle Aktivitäten für junge Gäste, darunter eine kleine Spielecke und kreative Bastelprojekte. Zudem gibt es einen Schlafbereich für die Kleinen, damit auch die Eltern entspannt feiern können. Bitte bringt bei Bedarf eine Schlafmöglichkeit für euer Kind mit (z.B. Reisebett).",
-    }
-  ],
+  {
+    "question": "Gibt es einen Dresscode?",
+    "answer": "Wir würden uns sehr freuen, wenn ihr euch für uns in Schale werft! Um dem Tag einen festlichen Rahmen zu geben, bitten wir um elegante Abendgarderobe – für die Damen gerne Cocktail- oder Abendkleider, für die Herren einen klassischen Anzug."
+  },
+  {
+    "question": "Wo kann ich parken?",
+    "answer": "Direkt an der Location stehen ausreichend Parkplätze für euch zur Verfügung. Solltet ihr das Auto nach der Feier stehen lassen wollen, ist das gar kein Problem – ihr könnt es einfach über Nacht dort parken und am nächsten Tag ganz entspannt abholen."
+  },
+  {
+    "question": "Was wünscht ihr euch zur Hochzeit?",
+    "answer": "Das größte Geschenk für uns ist es, diesen besonderen Tag gemeinsam mit euch zu verbringen! Solltet ihr uns darüber hinaus eine kleine Freude machen wollen, würden wir uns sehr über einen Zuschuss für unsere Flitterwochen freuen."
+  },
+  {
+    "question": "Was passiert bei schlechtem Wetter?",
+    "answer": "Macht euch keine Sorgen um das Wetter! Unsere Location bietet sowohl wunderschöne Außenbereiche als auch tolle Innenräume. Wir sind bestens gerüstet, sodass wir in jedem Fall ein unvergessliches Fest feiern werden."
+  },
+  {
+    "question": "An wen kann ich mich bei Fragen zur Hochzeit wenden?",
+    "answer": "Unsere Trauzeugen Nele und Fabian stehen euch bei allen Fragen rund um die Hochzeit gerne zur Verfügung. Ihr erreicht die beiden am besten per E-Mail unter: leitstellesimon@outlook.de."
+  },
+  {
+    "question": "Ich habe eine Idee für einen Programmpunkt oder eine Rede – an wen wende ich mich?",
+    "answer": "Wir freuen uns riesig über eure Beiträge und Überraschungen! Da wir – Kira und Paul – das Programm an unserem großen Tag vorher aber nicht kennen möchten, besprecht eure Ideen und Planungen bitte direkt und heimlich mit unseren Trauzeugen Nele und Fabian. Sie planen den Ablauf und helfen euch gerne weiter."
+  },
+  {
+    "question": "Gibt es Beschäftigungsmöglichkeiten für Kinder?",
+    "answer": "Kinder sind auf unserer Hochzeit herzlich willkommen! Damit auch bei unseren kleinen Gästen keine Langeweile aufkommt, richten wir eine gemütliche Kinderecke mit verschiedenen Spiel- und Bastelsachen ein."
+  },
+  {
+    "question": "Können meine Kinder vor Ort schlafen?",
+    "answer": "Ja, es steht ein separater Raum zur Verfügung, in dem die Kinder in Ruhe schlafen können, während die Eltern entspannt weiterfeiern. Bitte denkt jedoch daran, bei Bedarf eigene Reisebetten oder Schlafmöglichkeiten für eure Kleinen mitzubringen."
+  },
+  {
+    "question": "Was sonst noch?",
+    "answer": "Wir wünschen uns vor allem eine unvergessliche Hochzeit, auf der sich alle rundum wohlfühlen. Wir freuen uns riesig darauf, dass unsere Familien und Freunde zusammenkommen und wir gemeinsam ein großartiges Fest feiern!"
+  }
+],
   
   // RSVP Google Form URL
   rsvp: {
@@ -145,5 +161,6 @@ export const weddingData = {
           "Unser Ruhepol und Ansprechpartner für technische und organisatorische Fragen während des Events.",
       },
     ],
+    kontakt: "leitstellesimon@outlook.de"
   },
 };

@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { Mail } from 'lucide-react';
 import { weddingData } from '../data';
 import { withBase } from '../utils/asset';
 
@@ -24,6 +26,17 @@ export default function TrauzeugenSection() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center mt-12">
+          <motion.a
+            href={`mailto:${trauzeugen.kontakt}`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center gap-2 px-8 py-4 bg-sage text-white rounded-full font-medium hover:bg-sage-dark transition-colors shadow-lg hover:shadow-xl"
+          >
+            <Mail className="w-5 h-5" />
+            <span>E-Mail an die Trauzeugen</span>
+          </motion.a>
         </div>
       </div>
     </section>
