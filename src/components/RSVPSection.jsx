@@ -37,7 +37,7 @@ export default function RSVPSection() {
           className="bg-white rounded-2xl shadow-xl overflow-hidden"
         >
           {/* Google Form Embed */}
-          <div className="w-full h-[800px] md:h-[900px]">
+          <div className="w-full h-[1180px] md:h-[950px]">
             <iframe
               src={weddingData.rsvp.googleFormUrl}
               width="100%"

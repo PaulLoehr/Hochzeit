@@ -14,14 +14,14 @@ export const weddingData = {
   // Wedding Date & Time
   date: {
     full: "03. September 2026",
-    time: "15:00 Uhr",
+    time: "13:00 Uhr",
   },
 
   // Dresscode
   dresscode: {
     title: "Dresscode",
     description:
-      "Bitte kommt schick und elegant. Wir wünschen uns eine pastellige Farbpalette mit soften Tönen; als klassischer Akzent ist Navi-Blau ausdrücklich willkommen.",
+      "Bitte kommt schick und elegant. Wir wünschen uns eine pastellige Farbpalette mit soften Tönen. Für Männer ist ein Anzug in Navi-Blau auch willkommen.",
     // local public/ assets (filenames only) — components will prefix with BASE_URL
     paletteImage: "farbpalette.jpg"
   },
@@ -56,15 +56,15 @@ export const weddingData = {
         alt: "Castillo del Mar Außenbereich",
       },
       {
-        src: "https://www.castillodelmar.de/images/pictures/aussenbereich/castillodelmar-eingang-2.jpg",
+        src: "https://www.castillodelmar.de/images/pictures/aussenbereich/castillodelmar-pagoden-1.jpg",
         alt: "Eingang zur Eventlocation Castillo del Mar",
       },
       {
-        src: "https://www.castillodelmar.de/images/pictures/innenbereich/castillodelmar-innen-1.jpg",
+        src: "https://www.castillodelmar.de/images/pictures/aussenbereich/castillodelmar-pagoden-4.jpg",
         alt: "Innenbereich des Castillo del Mar",
       },
       {
-        src: "https://www.castillodelmar.de/images/pictures/innenbereich/castillodelmar-innen-2.jpg",
+        src: "https://www.castillodelmar.de/images/pictures/innenbereich/castillodelmar-innen-1.jpg",
         alt: "Festsaal im Castillo del Mar",
       },
     ],
@@ -73,25 +73,47 @@ export const weddingData = {
   // Timeline Events
   timeline: [
     {
-      time: "15:00",
-      title: "Trauung",
-      description: "Zeremonie im Schlossgarten",
+      time: "13:00",
+      title: "Ankunft & Empfang",
+      description: "Willkommen im Castillo del Mar! Holt euch einen Aperitif an der Bar.",
     },
     {
-      time: "16:30",
-      title: "Sektempfang",
-      description: "Cocktails & Canapés auf der Terrasse",
+      time: "14:00",
+      title: "Trauung",
+      description: "Seid dabei, wenn wir uns das Ja-Wort geben!",
+    },
+    {
+      time: "15:15",
+      title: "Sektempfang und Gruppenfoto",
+      description: "Stoßt mit uns auf die Ehe an! Anschließend machen wir ein großes Gruppenfoto mit allen Gästen.",
+    },
+    {
+      time: "16:15",
+      title: "Hochzeitstorte anschneiden",
+      description: "Der süße Höhepunkt des Nachmittags! Lasst euch die Hochzeitstorte schmecken.",
+    },
+    {
+      time: "17:45",
+      title: "Ansprache Brautpaar",
+      description: "Das Brautpaar hält eine kurze Ansprache und stellt die Hochzeitsgesellschaft vor.",
     },
     {
       time: "18:00",
-      title: "Dinner",
-      description: "3-Gänge Menü im Festsaal",
+      title: "Eröffnung des Buffets",
+      description: "Lasst es euch schmecken! Es gibt eine vielfältige Auswahl an köstlichen Speisen.",
     },
     {
-      time: "21:00",
-      title: "Party",
-      description: "Tanz & Celebration bis in die Nacht",
+      time: "Nach dem Essen",
+      title: "Programmpunkte, Hochzeitstanz & Party",
+      description: "Freut euch auf tolle Programmpunkte, den Eröffnungstanz des Brautpaares und eine ausgelassene Party bis in die Nacht!",
     },
+    {
+      time: "02:00",
+      title: "Ende der Feier",
+      description: "Wir hoffen, ihr hattet eine unvergessliche Zeit! Vielen Dank, dass ihr diesen besonderen Tag mit uns gefeiert habt.",
+    },
+
+
   ],
   
   // FAQ Items

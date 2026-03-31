@@ -20,7 +20,7 @@ export default function PhotosSection() {
   if (!photos) return null;
 
   return (
-    <section className="py-20 md:py-32 px-4 bg-white overflow-hidden">
+    <section className="py-20 md:py-32 px-4 bg-sage-light/20 overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,9 +33,7 @@ export default function PhotosSection() {
               {photos.title}
             </h2>
              {/* Icon moved under title */}
-            <div className="inline-flex items-center justify-center p-3 rounded-full bg-sage/10 text-sage">
-              <Camera className="w-6 h-6" />
-            </div>
+           
           </div>
           
           <p className="text-lg text-charcoal-light leading-relaxed max-w-2xl mx-auto mb-10">

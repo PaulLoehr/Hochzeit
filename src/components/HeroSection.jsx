@@ -5,9 +5,9 @@ import { weddingData } from '../data';
 import withBase from '../utils/asset';
 
 // CountdownArea: zeigt verbleibende Tage und Minuten bis zum Hochzeitsdatum an.
-// Annahme: Zieldatum ist 3. September 2026 (lokale Zeit, 14:00).
+// Annahme: Zieldatum ist 3. September 2026 (lokale Zeit, 13:00).
 function CountdownArea() {
-  const target = new Date(2026, 8, 3, 14, 0, 0); // Monat ist 0-basiert: 8 = September, Zeit: 14:00
+  const target = new Date(2026, 8, 3, 13, 0, 0); // Monat ist 0-basiert: 8 = September, Zeit: 13:00
 
   const compute = () => {
     const now = new Date();

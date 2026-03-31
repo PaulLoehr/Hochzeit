@@ -1,12 +1,56 @@
 import { motion } from 'framer-motion';
-import { Sparkles, Coffee, UtensilsCrossed, Music } from 'lucide-react';
+import {
+  Sparkles,
+  DoorOpen,
+  Heart,
+  Wine,
+  Cake,
+  Mic,
+  UtensilsCrossed,
+  PartyPopper,
+  MoonStar,
+} from 'lucide-react';
 import { weddingData } from '../data';
 
-const iconMap = {
-  0: Sparkles,
-  1: Coffee,
-  2: UtensilsCrossed,
-  3: Music,
+const timelineIconRules = [
+  {
+    pattern: /ankunft|empfang|willkommen|aperitif/i,
+    icon: DoorOpen,
+  },
+  {
+    pattern: /trauung|ja-wort|zeremonie/i,
+    icon: Heart,
+  },
+  {
+    pattern: /sektempfang|sekt|ansto/i,
+    icon: Wine,
+  },
+  {
+    pattern: /torte|kuchen|dessert/i,
+    icon: Cake,
+  },
+  {
+    pattern: /ansprache|rede|vorstell/i,
+    icon: Mic,
+  },
+  {
+    pattern: /buffet|essen|speisen|dinner/i,
+    icon: UtensilsCrossed,
+  },
+  {
+    pattern: /party|hochzeitstanz|tanzen|programmpunkte/i,
+    icon: PartyPopper,
+  },
+  {
+    pattern: /ende|abschied|nachts|nacht/i,
+    icon: MoonStar,
+  },
+];
+
+const getTimelineIcon = (event) => {
+  const text = `${event.title} ${event.description}`;
+  const matchingRule = timelineIconRules.find((rule) => rule.pattern.test(text));
+  return matchingRule?.icon || Sparkles;
 };
 
 const containerVariants = {
@@ -49,7 +93,7 @@ export default function TimelineSection() {
           transition={{ delay: 0.1, duration: 0.6 }}
           className="text-lg text-center text-charcoal-light max-w-2xl mx-auto mb-16 leading-relaxed"
         >
-          Wir können es kaum erwarten, diesen besonderen Tag mit euch zu verbringen!
+          Unser Tag mit euch voller Liebe, Lachen und unvergesslicher Momente – hier ist der grobe Ablauf, damit ihr wisst, was euch erwartet.
         </motion.p>
 
         <motion.div
@@ -63,7 +107,7 @@ export default function TimelineSection() {
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-sage/30 transform md:-translate-x-1/2" />
 
           {weddingData.timeline.map((event, index) => {
-            const Icon = iconMap[index] || Sparkles;
+            const Icon = getTimelineIcon(event);
             const isEven = index % 2 === 0;
 
             return (
@@ -76,8 +120,10 @@ export default function TimelineSection() {
               >
                 {/* Content */}
                 <div
-                  className={`flex-1 ${
-                    isEven ? 'md:text-right md:pr-12' : 'md:text-left md:pl-12'
+                  className={`flex-1 md:flex-none md:w-[calc(50%-0rem)] ${
+                    isEven
+                      ? 'md:mr-auto md:text-right md:pr-14'
+                      : 'md:ml-auto md:text-left md:pl-14'
                   } pl-16 md:pl-0`}
                 >
                   <div className="bg-white p-6 rounded-lg shadow-md">

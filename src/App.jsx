@@ -52,9 +52,9 @@ function App() {
             <DresscodeSection />
             <TimelineSection />
             <RSVPSection />
+            <FAQSection />
             <LocationSection />
             <PhotosSection />
-            <FAQSection />
 
             {/* Footer */}
             <footer className="bg-charcoal text-white py-8 text-center">

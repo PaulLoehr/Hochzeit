@@ -16,7 +16,7 @@ export default function LocationSection() {
   }, [location]);
 
   return (
-    <section className="py-20 md:py-32 px-4 bg-sage-light/20">
+    <section className="py-20 md:py-32 px-4 bg-cream">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -28,21 +28,22 @@ export default function LocationSection() {
           Die Location
         </motion.h2>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="relative w-full max-w-2xl mx-auto aspect-[3/2] md:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl bg-gray-100 ring-8 ring-white mb-12"
-        >
-          <iframe
-            src={weddingData.location.googleMapsEmbedUrl}
-            title="Google Maps - Castillo del Mar"
-            className="absolute inset-0 w-full h-full border-0"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </motion.div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative w-full max-w-2xl mx-auto aspect-[3/2] md:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl bg-gray-100 ring-8 ring-white"
+          >
+            <iframe
+              src={weddingData.location.googleMapsEmbedUrl}
+              title="Google Maps - Castillo del Mar"
+              className="absolute inset-0 w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </motion.div>
 
         {location.images?.length > 0 && (
           <motion.div
@@ -76,6 +77,7 @@ export default function LocationSection() {
             </div>
           </motion.div>
         )}
+        </div>
       </div>
     </section>
   );

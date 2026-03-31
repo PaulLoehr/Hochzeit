@@ -38,7 +38,7 @@ export default function DresscodeSection() {
             <img
               src={withBase(weddingData.dresscode.paletteImage)}
               alt="Dresscode Farbpalette in Pastelltönen mit Navi-Blau"
-              className="w-full h-auto object-contain"
+              className="w-full h-64 md:h-72 object-cover object-center"
               loading="lazy"
             />
           </figure>
