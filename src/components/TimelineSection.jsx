@@ -3,7 +3,6 @@ import {
   Sparkles,
   DoorOpen,
   Heart,
-  Wine,
   Cake,
   Mic,
   UtensilsCrossed,
@@ -11,6 +10,24 @@ import {
   MoonStar,
 } from 'lucide-react';
 import { weddingData } from '../data';
+
+const ChampagneGlass = ({ className = '' }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M9 2h6v4a3 3 0 0 1-6 0V2z" />
+    <path d="M9 6a3 3 0 0 0 6 0" />
+    <path d="M12 9v8" />
+    <path d="M8 21h8" />
+  </svg>
+);
 
 const timelineIconRules = [
   {
@@ -23,7 +40,7 @@ const timelineIconRules = [
   },
   {
     pattern: /sektempfang|sekt|ansto/i,
-    icon: Wine,
+    icon: ChampagneGlass,
   },
   {
     pattern: /torte|kuchen|dessert/i,
