@@ -37,7 +37,7 @@ export default function DresscodeSection() {
           <figure className="relative bg-white rounded-2xl overflow-hidden shadow-2xl ring-8 ring-white">
             <img
               src={withBase(weddingData.dresscode.paletteImage)}
-              alt="Dresscode Farbpalette in Pastelltönen mit Navi-Blau"
+              alt="Dresscode Farbpalette in Pastelltönen mit Navy-Blau"
               className="w-full h-64 md:h-72 object-cover object-center"
               loading="lazy"
             />
