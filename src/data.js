@@ -128,7 +128,7 @@ export const weddingData = {
   },
   {
     "question": "Was wünscht ihr euch zur Hochzeit?",
-    "answer": "Das größte Geschenk für uns ist es, diesen besonderen Tag gemeinsam mit euch zu verbringen! Solltet ihr uns darüber hinaus eine kleine Freude machen wollen, würden wir uns sehr über einen Zuschuss für unsere Flitterwochen freuen."
+    "answer": "Das größte Geschenk für uns ist es, diesen besonderen Tag gemeinsam mit euch zu verbringen und zu genießen! Solltet ihr uns darüber hinaus eine Freude machen wollen, würden wir uns sehr über einen Zuschuss für unsere Flitterwochen im nächsten Jahr freuen."
   },
   {
     "question": "Was passiert bei schlechtem Wetter?",
@@ -140,7 +140,7 @@ export const weddingData = {
   },
   {
     "question": "Ich habe eine Idee für einen Programmpunkt oder eine Rede – an wen wende ich mich?",
-    "answer": "Wir freuen uns riesig über eure Beiträge und Überraschungen! Da wir – Kira und Paul – das Programm an unserem großen Tag vorher aber nicht kennen möchten, besprecht eure Ideen und Planungen bitte direkt und heimlich mit unseren Trauzeugen Nele und Fabian. Sie planen den Ablauf und helfen euch gerne weiter."
+    "answer": "Wir freuen uns riesig über eure Beiträge und Überraschungen! Da wir – Kira und Paul – das Programm an unserem großen Tag vorher aber nicht kennen möchten, besprecht eure Ideen und Planungen bitte direkt und heimlich mit unseren Trauzeugen Nele und Fabian. Sie planen den Ablauf und helfen euch gerne weiter. Wendet euch bitte per E-Mail an: leitstellesimon@outlook.de"
   },
   {
     "question": "Gibt es Beschäftigungsmöglichkeiten für Kinder?",
@@ -149,6 +149,10 @@ export const weddingData = {
   {
     "question": "Können meine Kinder vor Ort schlafen?",
     "answer": "Ja, es steht ein separater Raum zur Verfügung, in dem die Kinder in Ruhe schlafen können, während die Eltern entspannt weiterfeiern. Bitte denkt jedoch daran, bei Bedarf eigene Reisebetten oder Schlafmöglichkeiten für eure Kleinen mitzubringen."
+  },
+  {
+    "question": "Gibt es Übernachtungsmöglichkeiten in der Nähe?",
+    "answer": "Ja, es gibt mehrere Hotels und Pensionen in der Nähe der Location, beispielsweise in Bad Langenbrücken, Östringen, Unteröwisheim,... aber auch in Richtung Karlsruhe. Wir empfehlen euch, frühzeitig zu reservieren, da die Unterkünfte in der Umgebung schnell ausgebucht sein können."
   },
   {
     "question": "Was sonst noch?",
