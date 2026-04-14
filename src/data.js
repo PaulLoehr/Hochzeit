@@ -21,7 +21,7 @@ export const weddingData = {
   dresscode: {
     title: "Dresscode",
     description:
-      "Bitte kommt schick und elegant. Wir wünschen uns eine pastellige Farbpalette mit soften Tönen. Für Männer ist ein Anzug in Navi-Blau auch willkommen.",
+      "Bitte kommt schick und elegant. Wir wünschen uns eine pastellige Farbpalette mit soften Tönen. Für Männer ist ein Anzug in Navy-Blau auch willkommen.",
     // local public/ assets (filenames only) — components will prefix with BASE_URL
     paletteImage: "farbpalette.jpg"
   },

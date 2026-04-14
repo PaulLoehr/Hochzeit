@@ -31,16 +31,16 @@ const ChampagneGlass = ({ className = '' }) => (
 
 const timelineIconRules = [
   {
+    pattern: /sektempfang|sekt|ansto/i,
+    icon: ChampagneGlass,
+  },
+  {
     pattern: /ankunft|empfang|willkommen|aperitif/i,
     icon: DoorOpen,
   },
   {
     pattern: /trauung|ja-wort|zeremonie/i,
     icon: Heart,
-  },
-  {
-    pattern: /sektempfang|sekt|ansto/i,
-    icon: ChampagneGlass,
   },
   {
     pattern: /torte|kuchen|dessert/i,
